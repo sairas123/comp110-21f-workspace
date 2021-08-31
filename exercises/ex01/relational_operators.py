@@ -1,6 +1,6 @@
 """Relational operators Exercise!"""
 
-_author_ = " 730439074 "
+__author__ = " 730439074 "
 
 x: int = int(input("Left_side: "))
 
