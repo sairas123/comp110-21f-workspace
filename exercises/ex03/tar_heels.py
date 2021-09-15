@@ -4,9 +4,9 @@ __author__ = "730439074"
 
 
 # Begin your solution here...
-#if x is evely divisible by 2
-#if x is evenly divisble by 7
-#if x is evenly divisble by both 2 and 7
+# if x is evely divisible by 2
+# if x is evenly divisble by 7
+# if x is evenly divisble by both 2 and 7
 x: int = int(input("Enter an int: "))
 a = (x % 2)
 b = (x % 7)
