@@ -8,9 +8,10 @@ __author__ = "730439074"
 
 def all(x:list[int], y: int) -> bool:  
 
-    if len(x) == y:
+    while len(x) == y:
         return True
-    return False
+    else:
+        return False
 
 
 """Exercise on deep equality and comparing two lists."""
@@ -18,9 +19,9 @@ def all(x:list[int], y: int) -> bool:
 
 __author__ = "730439074"
 
-def is_equal(x:list[int], y: list[int]) -> bool:  
+def is_equal(a:list[int], b: list[int]) -> bool:  
 
-    if x == y: 
+    while a == b: 
         print(True)
     else:
         print(False)
