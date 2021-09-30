@@ -30,7 +30,7 @@ def is_equal(a:list[int], b: list[int]) -> bool:
 """Exercise max on our own"""
 
 
-def max(x:list[int]) -> int:  
+def max(list[int]) -> int:  
     max_number = max(x)
     if len(input) == 0:
         raise ValueError("max() arg is an empty list")
