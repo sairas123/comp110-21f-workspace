@@ -3,36 +3,49 @@
 # TODO: Uncomment the below line when ready to write unit tests
 # from exercises.ex05.utils import only_evens, sub, concat
 
-__author__ = "123456789"
+__author__ = "730439074"
 """Tests for the only evens function. """
-from exercises.ex05.utils import only_evens,sub,concat
+
+from exercises.ex05.utils import only_evens
 
 def test_only_evens_empty() -> None:
     x:list[int] = []
     assert only_evens(x) == 0
-
 def test_only_evens_one() -> None:
-    x:list[int] = [1, 2, 2, 3, 4 ]
-    assert only_evens(x) == 2,4
+    x:list[int] = [1, 2, 3, 4 ]
+    assert only_evens(x) == 2
 
 def test_only_evens_two() -> None:
-    assert only_evens(-1,2) == 2
+    x:list[int] = []
+    assert only_evens(x) == 2
  
 
+
+
+
 """Tests for the sub function"""
+
+
 def test_sub_empty() -> None:
     x:list[int] = []
     assert sub(x) == 0
 
 def test_sub_one() -> None:
-    x:list[int] = [10,20,30,40 ]
-    assert sub(x) == 1,3
+    x:list[int] = [10,20,30 ]
+    assert sub(x) == 10,30
 
 def test_sub_two() -> None:
-    x:list[int] = [-10,10,-20,20]
-    assert sub(-10, 10, -20, 20) == 1,2
+    x:list[int] = []
+    assert sub(-10, 10, -20, 20) == 0
 
-    """Tests for the Concat Function."""
+
+
+
+
+
+"""Tests for the Concat Function."""
+
+
 def test_concat_empty() -> None:
     xs:list[int] = []
     ys:list[int] = []
