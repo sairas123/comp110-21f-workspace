@@ -1,6 +1,7 @@
 """Utility functions."""
 
 __author__ = "730439074"
+
 from csv import DictReader
 
 
@@ -41,31 +42,37 @@ def columnar(row_table: list[dict[str, str]]) -> dict[str, list[str]]:
 def head(column: dict[str, list[str]], rows:int) -> dict[str, list[str]]:
     """Columnh based table with only the first N rows of data for each column."""
     result: dict[str, list[str]] = {}
+
+    row_table: dict[str, list[str]]
+    for data in row_table:
+        item: str = data[rows]
+        result.append(item)
     return result
 
 
-def select(subject_race: dict[str,list[str]], subject_sex: list[str]) -> dict[str, list[str]]:
+def select(subject_race: dict[str,list[str]], subject_sex: list[str]) -> None:
     """To produce a new column-based table."""
-    result: dict[str, list[str]]
+    result =  dict[str, list[str]] = [str, list[str]
     return result
 
 
 def concat(column_one: dict[str, list[str]], column_two: dict[str,list[str]]) -> dict[str, list[str]]:
-    """New column based table with two culmn based tables combined."""
+    """New column based table with two column based tables combined."""
 
     new_column: dict[str, list[str]]
 
     for data in new_column:
         result[data]= column_one + column_two
-
+        result.append(data)
         return result
+    else:
+        return column_two
 
-
-def count(table: list[str])-> dict[str, int]
+def count(table: list[str])-> (counts:dict[str, int]):
     """Preforming simple analysis with the data given."""
     result: dict[str, int] = []
 
     for data in table:
-        item: int = data[counts]
+        item: str = data[table]
         result.append(item)
-    return results
+    return result
