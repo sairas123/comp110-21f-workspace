@@ -76,3 +76,4 @@ def count(table: list[str])-> (counts:dict[str, int]):
         item: str = data[table]
         result.append(item)
     return result
+
