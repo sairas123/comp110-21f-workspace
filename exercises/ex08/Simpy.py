@@ -25,7 +25,7 @@ class Simpy:
         # loop for 'times' number of times
         i: int = 0
         while i < times:
-        #   append value parameter to the values list
+            # append value parameter to the values list
             self.values.append(value)
             i += 1
 
@@ -41,11 +41,16 @@ class Simpy:
             next_value: float = start
             # While next value is less than stop value
             while next_value < stop:
-                 # Add next value to values list
-                 self.values.append(next_value)
-                 # Update next value by adding the step to it
-                 next_value += step
-        # else TODO: handle the negative step case
+                # Add next value to values list
+                self.values.append(next_value)
+                # Update next value by adding the step to it
+                next_value += step
+        else:
+            if step < 0.0:
+            neg_value: float = start
+            while neg_value < stop:
+                self.values.append(neg_value)
+                neg_value += step
 
     def sum(self) -> float:
         """Delegate this algo to the built-in sum function."""
