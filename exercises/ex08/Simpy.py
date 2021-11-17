@@ -77,43 +77,4 @@ class Simpy:
             while i < len(self.values):
                 result.values.append(self.values[i] ** rhs.values[i])
                 i += 1
-        return result 
-    
-    def __eq__(self, rhs: Union[float, Simpy]) -> list[bool]:
-        """Operator overload for ==."""
-        result: Simpy = list[bool]
-        if isinstance(rhs, float):
-            for value in self.values:
-                result.values.append(value)
-        else:
-            assert len(self.values) == len(rhs.values)
-            i: int = 0
-            while i < len(self.values):
-                result.values.append(self.values[i] == rhs.values[i])
-                i += 1
         return result
-
-    def __gt__(self, rhs: Union[float, Simpy]) -> list[bool]:
-        """Operator overload for greater than."""
-        result: Simpy = list[bool]
-        if isinstance(rhs, float):
-            for value in self.values:
-                result.values.append(value + rhs)
-        else:
-            assert len(self.values) == len(rhs.values)
-            i: int = 0
-            while i < len(self.values):
-                result.values.append(self.values[i] > rhs.values[i])
-                i += 1
-        return result
-
-    def __getitem__(self, reh:int) -> float:
-        """Operator overload for subscription notation."""
-        
-    def __getitem__(self, rhs; Union[int, list[bool]]) -> Union[float, Simpy]:
-        """Operator overload for Subscription Notation."""
-
-
-
-
-
